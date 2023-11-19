@@ -1,0 +1,235 @@
+.menu{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+    padding-bottom: 14px;
+   
+}
+
+.menu:hover{
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.textresponsive{
+    font-size: 90px;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 17%;
+    color: white;
+}
+
+.hbtn{
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: .3s ease-in-out ;
+    animation: btn 2s linear infinite;
+}
+.hbtn:hover{
+    border: 2px solid white;
+    animation-play-state: paused;
+}
+
+.smallscren{
+    display: none;
+    animation: btn 2s linear infinite;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+
+@media (max-width:565px) {
+    
+    .menue{
+        display: none;
+    }
+    .textresponsive{
+        font-size: 60px;
+       margin-top: 40%;
+    }
+    .sub{
+        font-size: 11px;
+        margin-bottom: 30%;
+    }
+    .smallscren{
+        display: block;
+    }
+    .th{
+        font-size: 30px;
+    }
+   
+}
+
+
+@keyframes btn{
+    25%{
+        border-top: 2px solid rgb(255, 213, 0);
+    }
+
+    50%{
+        border-left: 2px solid rgb(255, 213, 0);
+    }
+
+    75%{
+        border-bottom: 2px solid rgb(255, 213, 0);
+    }
+
+    100%{
+        border-right: 2px solid rgb(255, 213, 0);
+    }
+}
+
+.techcard{
+   width: 240px;
+   height: 300px;
+   background-color: rgb(0, 0, 0);
+   border-radius: 15px; 
+   padding: 15px;
+   
+}
+.imgg{
+    width: 100%;
+    border-radius: 10px;
+}
+.tech{
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+@media (max-width:567px) {
+
+    .techcard{
+        width: 121px;
+        height: 140px;
+        background-color: rgb(0, 0, 0);
+        
+     }
+
+     .imgg{
+        width: 100% ;
+        
+    }
+   
+   
+    
+}
+
+.projectcard{
+    width: 40%;
+   background-color: rgb(0, 0, 0); 
+   border-radius: 5px;
+   text-align: center;
+   font-family: 'Titillium Web', sans-serif;
+   width: 500px;
+   margin-bottom: 20px;
+   padding: 10px;
+   color: white;
+
+}
+.proimg{
+    width:100%;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    animation: projectout 1s linear infinite;
+
+}
+.projects{
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+
+}
+
+@keyframes projectout {
+    25%{
+        border-top: 5px solid rgb(246, 255, 0);
+    }
+
+    50%{
+        border-left: 5px solid rgb(246, 255, 0);
+    }
+
+    75%{
+        border-bottom: 5px solid rgb(255, 247, 0);
+    }
+
+    100%{
+        border-right: 5px solid rgb(255, 213, 0);
+    }
+}
+
+.servicecard{
+    width: 500px;
+    height: auto;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 17px;
+    gap: 30px;
+}
+.imgs{
+    width: 100%;
+   
+}
+.servicediv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+@media (max-width:568px) {
+
+    .servicecard{
+        width: 280px;
+        height:300px;
+    }
+    #About{
+        height: 10px;
+    }
+    .projectcard{
+       
+        background-color: rgb(0, 0, 0); 
+        border-radius: 5px;
+        text-align: center;
+        font-family: 'Titillium Web', sans-serif;
+        width: 290px;
+        margin-bottom: 20px;
+        padding: 10px;
+        color: white;
+     
+     }
+   
+}
+
+#About{
+    margin-top: 50px;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+}
+@media (max-width:980px) {
+    .fh{
+        margin: 8px;
+    }
+
+    
+}
+
+.details{
+    color: white;
+    text-align: center;
+}
+
+.texthilight:hover{
+    background-color: gray;
+}
